@@ -13,5 +13,4 @@ public class Environments {
     static let profileId = ""
     static let appVersionId = ""
     static let pat = ""
-    static var accessToken = ""
 }
