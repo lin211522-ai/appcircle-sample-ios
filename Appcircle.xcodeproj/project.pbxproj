@@ -15,6 +15,15 @@
 		450FAD81277C4BBF00C3060D /* AppcircleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FAD80277C4BBF00C3060D /* AppcircleUITests.swift */; };
 		450FAD83277C4BBF00C3060D /* AppcircleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FAD82277C4BBF00C3060D /* AppcircleUITestsLaunchTests.swift */; };
 		450FAD92277C4D4D00C3060D /* FizzBuzzKit in Frameworks */ = {isa = PBXBuildFile; productRef = 450FAD91277C4D4D00C3060D /* FizzBuzzKit */; };
+		9F83D6122C6DEB7700870F4C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D6072C6DEB7700870F4C /* HTTPMethod.swift */; };
+		9F83D6132C6DEB7700870F4C /* getAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D6092C6DEB7700870F4C /* getAccessToken.swift */; };
+		9F83D6142C6DEB7700870F4C /* getAppVersions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D60A2C6DEB7700870F4C /* getAppVersions.swift */; };
+		9F83D6152C6DEB7700870F4C /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D60B2C6DEB7700870F4C /* HTTPError.swift */; };
+		9F83D6162C6DEB7700870F4C /* APIFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D60C2C6DEB7700870F4C /* APIFetcher.swift */; };
+		9F83D6172C6DEB7700870F4C /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D60D2C6DEB7700870F4C /* APIConfig.swift */; };
+		9F83D6182C6DEB7700870F4C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D60E2C6DEB7700870F4C /* API.swift */; };
+		9F83D6192C6DEB7700870F4C /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D6102C6DEB7700870F4C /* Environments.swift */; };
+		9F83D61A2C6DEB7700870F4C /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F83D6112C6DEB7700870F4C /* UpdateChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,15 @@
 		518CE9777E6CE0571A6DC6D9 /* Pods-Appcircle-AppcircleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appcircle-AppcircleUITests.release.xcconfig"; path = "Target Support Files/Pods-Appcircle-AppcircleUITests/Pods-Appcircle-AppcircleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8822187C3BBED735C1EBDCFE /* Pods-Appcircle-AppcircleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appcircle-AppcircleUITests.debug.xcconfig"; path = "Target Support Files/Pods-Appcircle-AppcircleUITests/Pods-Appcircle-AppcircleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CA672B203BF1AB373CC906E /* Pods_AppcircleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppcircleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F83D6072C6DEB7700870F4C /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9F83D6092C6DEB7700870F4C /* getAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getAccessToken.swift; sourceTree = "<group>"; };
+		9F83D60A2C6DEB7700870F4C /* getAppVersions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getAppVersions.swift; sourceTree = "<group>"; };
+		9F83D60B2C6DEB7700870F4C /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		9F83D60C2C6DEB7700870F4C /* APIFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFetcher.swift; sourceTree = "<group>"; };
+		9F83D60D2C6DEB7700870F4C /* APIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		9F83D60E2C6DEB7700870F4C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9F83D6102C6DEB7700870F4C /* Environments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
+		9F83D6112C6DEB7700870F4C /* UpdateChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateChecker.swift; sourceTree = "<group>"; };
 		C41578F903125A0CD7D4C6D1 /* Pods-Appcircle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appcircle.release.xcconfig"; path = "Target Support Files/Pods-Appcircle/Pods-Appcircle.release.xcconfig"; sourceTree = "<group>"; };
 		E575E4F72A6E7F435A20C2F5 /* Pods-Appcircle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appcircle.debug.xcconfig"; path = "Target Support Files/Pods-Appcircle/Pods-Appcircle.debug.xcconfig"; sourceTree = "<group>"; };
 		FCFEB78EDB1F77EF190FD514 /* Pods_Appcircle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appcircle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +127,8 @@
 		450FAD64277C4BBC00C3060D /* Appcircle */ = {
 			isa = PBXGroup;
 			children = (
+				9F83D6062C6DEB7700870F4C /* Networking */,
+				9F83D60F2C6DEB7700870F4C /* UpdateChecker */,
 				450FAD65277C4BBC00C3060D /* AppcircleApp.swift */,
 				450FAD67277C4BBC00C3060D /* ContentView.swift */,
 				450FAD69277C4BBF00C3060D /* Assets.xcassets */,
@@ -150,6 +170,37 @@
 				9CA672B203BF1AB373CC906E /* Pods_AppcircleTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F83D6062C6DEB7700870F4C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9F83D6072C6DEB7700870F4C /* HTTPMethod.swift */,
+				9F83D6082C6DEB7700870F4C /* Requests */,
+				9F83D60B2C6DEB7700870F4C /* HTTPError.swift */,
+				9F83D60C2C6DEB7700870F4C /* APIFetcher.swift */,
+				9F83D60D2C6DEB7700870F4C /* APIConfig.swift */,
+				9F83D60E2C6DEB7700870F4C /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9F83D6082C6DEB7700870F4C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				9F83D6092C6DEB7700870F4C /* getAccessToken.swift */,
+				9F83D60A2C6DEB7700870F4C /* getAppVersions.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		9F83D60F2C6DEB7700870F4C /* UpdateChecker */ = {
+			isa = PBXGroup;
+			children = (
+				9F83D6102C6DEB7700870F4C /* Environments.swift */,
+				9F83D6112C6DEB7700870F4C /* UpdateChecker.swift */,
+			);
+			path = UpdateChecker;
 			sourceTree = "<group>";
 		};
 		B1F44333DE4BA7CE83A6EEB4 /* Pods */ = {
@@ -370,8 +421,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F83D6142C6DEB7700870F4C /* getAppVersions.swift in Sources */,
 				450FAD68277C4BBC00C3060D /* ContentView.swift in Sources */,
+				9F83D6172C6DEB7700870F4C /* APIConfig.swift in Sources */,
+				9F83D6192C6DEB7700870F4C /* Environments.swift in Sources */,
 				450FAD66277C4BBC00C3060D /* AppcircleApp.swift in Sources */,
+				9F83D6132C6DEB7700870F4C /* getAccessToken.swift in Sources */,
+				9F83D6152C6DEB7700870F4C /* HTTPError.swift in Sources */,
+				9F83D6122C6DEB7700870F4C /* HTTPMethod.swift in Sources */,
+				9F83D61A2C6DEB7700870F4C /* UpdateChecker.swift in Sources */,
+				9F83D6182C6DEB7700870F4C /* API.swift in Sources */,
+				9F83D6162C6DEB7700870F4C /* APIFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

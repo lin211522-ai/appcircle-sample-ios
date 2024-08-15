@@ -1,0 +1,43 @@
+//
+//  getAccessToken.swift
+//  Appcircle
+//
+//  Created by Güven Karanfil on 2.08.2024.
+//
+
+import Foundation
+
+struct AuthModel: Codable {
+    let accessToken: String
+    
+    enum CodingKeys: String, CodingKey {
+        case accessToken = "access_token"
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        accessToken = try container.decode(String.self, forKey: .accessToken)
+    }
+}
+
+extension API {
+    func getAccessToken(pat: String) async throws -> AuthModel {
+        var components = URLComponents()
+        components.scheme = apiConfig.scheme
+        components.host = apiConfig.host
+        components.path = "/auth/v2/token"
+        guard let url = components.url else {
+            throw HTTPError.invalidUrl
+        }
+        var request = URLRequest(url: url)
+    
+        request.httpMethod = HTTPMethod.POST.rawValue
+        request.setValue("application/json", forHTTPHeaderField: "accept")
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        
+        let parameters = "pat=\(pat)&scope=openid email profile"
+        request.httpBody = parameters.data(using: .utf8)
+
+        return try await apiFetcher.request(request: request)
+    }
+}
