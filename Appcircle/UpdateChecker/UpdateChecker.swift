@@ -17,7 +17,7 @@ public class UpdateChecker {
     private var api: API
     
     init() {
-        self.authApiConfig  = APIConfig(scheme: "https", host: "auth.appcircle.io")
+        self.authApiConfig  = APIConfig(scheme: "https", host: Environments.storeURL)
         self.authApiFetcher = APIFetcher()
         self.authApi = API(apiConfig: self.authApiConfig, apiFetcher: self.authApiFetcher)
         
@@ -26,10 +26,10 @@ public class UpdateChecker {
         self.api = API(apiConfig: self.authApiConfig, apiFetcher: self.authApiFetcher)
     }
     
-    func checkForUpdate(pat: String, profileId: String, storePrefix: String, userEmail: String) async throws -> URL? {
+    func checkForUpdate(organizationId: String, secret: String, profileId: String, storeURL: String, userEmail: String) async throws -> URL? {
         do {
-            let authResponse = try await self.authApi.getAccessToken(pat: pat)
-            let appVersions = try await self.api.getAppVersions(accessToken: authResponse.accessToken, profileId: profileId)
+            let authResponse = try await self.authApi.getAccessToken(organizationId: organizationId, secret: secret, profileId: profileId)
+            let appVersions = try await self.api.getAppVersions(accessToken: authResponse.accessToken)
             let bundle = Bundle.main
             let currentVersion = bundle.infoDictionary?["CFBundleShortVersionString"] as? String
             guard let currentVersion = currentVersion else {
@@ -42,7 +42,7 @@ public class UpdateChecker {
                 return nil
             }
             
-            guard let downloadURL  = URL(string: "itms-services://?action=download-manifest&url=https://\(storePrefix).store.appcircle.io/api/profile/\(profileId)/appVersions/\(availableVersion.id)/download-update/\(authResponse.accessToken)/user/\(userEmail)") else {
+            guard let downloadURL  = URL(string: "itms-services://?action=download-manifest&url=https://\(storeURL)/api/app-versions/\(availableVersion.id)/download-version/\(authResponse.accessToken)/user/\(userEmail)") else {
                 print("Latest Version URL could not created")
                 return nil
             }

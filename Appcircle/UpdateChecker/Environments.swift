@@ -9,8 +9,8 @@ import Foundation
 
 
 public class Environments {
-    static let storeId = ""
+    static let storeURL = ""
     static let profileId = ""
-    static let appVersionId = ""
-    static let pat = ""
+    static let organizationId = ""
+    static let secret = ""
 }

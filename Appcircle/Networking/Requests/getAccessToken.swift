@@ -21,23 +21,29 @@ struct AuthModel: Codable {
 }
 
 extension API {
-    func getAccessToken(pat: String) async throws -> AuthModel {
+    func getAccessToken(organizationId: String, secret: String, profileId: String) async throws -> AuthModel {
         var components = URLComponents()
         components.scheme = apiConfig.scheme
         components.host = apiConfig.host
-        components.path = "/auth/v2/token"
+        components.path = "/api/auth/token"
+        
         guard let url = components.url else {
             throw HTTPError.invalidUrl
         }
-        var request = URLRequest(url: url)
-    
-        request.httpMethod = HTTPMethod.POST.rawValue
-        request.setValue("application/json", forHTTPHeaderField: "accept")
-        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         
-        let parameters = "pat=\(pat)&scope=openid email profile"
-        request.httpBody = parameters.data(using: .utf8)
-
+        var request = URLRequest(url: url)
+        request.httpMethod = HTTPMethod.POST.rawValue
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let parameters: [String: Any] = [
+            "OrganizationId": organizationId,
+            "ProfileId": profileId,
+            "Secret": secret
+        ]
+        
+        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
+        
         return try await apiFetcher.request(request: request)
     }
 }

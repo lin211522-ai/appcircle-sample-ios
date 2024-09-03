@@ -26,7 +26,14 @@ public class APIFetcher: HTTPClient {
                 }
 
                 do {
-                    let decodedData = try JSONDecoder().decode(T.self, from: data)
+                    var convertedData = data
+                    let jsonObject = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    if let dataObject = jsonObject?["data"] {
+                        convertedData = try JSONSerialization.data(withJSONObject: dataObject)
+                    }
+                    
+
+                    let decodedData = try JSONDecoder().decode(T.self, from: convertedData)
                     continuation.resume(returning: decodedData)
                 } catch {
                     continuation.resume(throwing: HTTPError.failedDecoding)

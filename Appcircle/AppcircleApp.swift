@@ -19,7 +19,7 @@ struct AppcircleApp: App {
                 .onAppear {
                     let updateChecker = UpdateChecker()
                     Task {
-                        if let updateURL = try await updateChecker.checkForUpdate(pat: Environments.pat, profileId: Environments.profileId, storePrefix: Environments.storeId, userEmail: "USER_EMAIL") {
+                        if let updateURL = try await updateChecker.checkForUpdate(organizationId: Environments.organizationId, secret: Environments.secret, profileId: Environments.profileId, storeURL: Environments.storeURL, userEmail: "USER_EMAIL") {
                             self.updateURL = updateURL
                             self.showAlert.toggle()
                         }

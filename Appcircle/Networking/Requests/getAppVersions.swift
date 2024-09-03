@@ -27,11 +27,11 @@ public struct AppVersion: Codable {
 }
 
 extension API {
-    func getAppVersions(accessToken: String, profileId: String) async throws -> [AppVersion] {
+    func getAppVersions(accessToken: String) async throws -> [AppVersion] {
         var components = URLComponents()
         components.scheme = apiConfig.scheme
         components.host = apiConfig.host
-        components.path = "/store/v2/profiles/\(profileId)/app-versions"
+        components.path = "/api/app-versions"
         guard let url = components.url else {
             throw HTTPError.invalidUrl
         }
