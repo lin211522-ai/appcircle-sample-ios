@@ -11,8 +11,8 @@ sauce:
     build: Release $CI_COMMIT_SHORT_SHA
 
 xcuitest:
-  app: $AC_TEST_APP_PATH
-  testApp: $AC_TEST_IPA_PATH
+  app: ./Appcircle.app
+  testApp: ./Appcircle.ipa
 
 suites:
   - name: "saucy xcuitest"
