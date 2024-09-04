@@ -1,0 +1,55 @@
+apiVersion: v1alpha
+kind: xcuitest
+sauce:
+  region: us-west-1
+  concurrency: 3
+  metadata:
+    tags:
+      - e2e
+      - release team
+      - other tag
+    build: Release $CI_COMMIT_SHORT_SHA
+
+xcuitest:
+  app: $AC_TEST_APP_PATH
+  testApp: $AC_TEST_IPA_PATH
+
+suites:
+  - name: "saucy xcuitest"
+    devices:
+      # If set, only device by ID will be queried.
+      #- id: <rdc_device_id>
+      - name: "iPhone.*"
+        options:
+          # If set, only devices with a SIM card will be queried.
+          carrierConnectivity: false
+          # Possible values [ANY, PHONE, TABLET]
+          deviceType: ANY
+          # If set, only private devices will be queried.
+          private: false
+  - name: "saucy xcuitest test filter by class"
+    testOptions:
+      class:
+        - DemoAppUITests.DemoAppUITestsLaunchTests
+    devices:
+      # If set, only device by ID will be queried.
+      #- id: <rdc_device_id>
+      - name: "iPhone.*"
+        options:
+          # If set, only devices with a SIM card will be queried.
+          carrierConnectivity: false
+          # Possible values [ANY, PHONE, TABLET]
+          deviceType: ANY
+          # If set, only private devices will be queried.
+          private: false
+
+artifacts:
+  download:
+    when: always
+    match:
+      - "junit.xml"
+    directory: ./artifacts/
+
+reporters:
+  spotlight: # Prints an overview of failed or otherwise interesting jobs.
+    enabled: true
