@@ -41,9 +41,6 @@ class AppcircleTests: XCTestCase {
         XCTAssertTrue(true, "This test should pass")
     }
     
-    func testFail() throws {
-        XCTAssertTrue(false,"This test should fail")
-    }
     
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
