@@ -20,7 +20,7 @@ suites:
       # If set, only device by ID will be queried.
       #- id: <rdc_device_id>
       - name: "iPhone XR"
-        platformVersion: "14.3"
+        platformVersion: "12.1"
         options:
           # If set, only devices with a SIM card will be queried.
           carrierConnectivity: false
