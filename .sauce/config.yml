@@ -19,7 +19,7 @@ suites:
     devices:
       # If set, only device by ID will be queried.
       #- id: <rdc_device_id>
-      - name: "iPhone 15"
+      - name: "iPhone 11"
         options:
           # If set, only devices with a SIM card will be queried.
           carrierConnectivity: false
