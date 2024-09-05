@@ -15,7 +15,7 @@ xcuitest:
   testApp: $AC_UITESTS_RUNNER_PATH
 
 suites:
-  - name: "saucy xcuitest"
+  - name: "xcuitest"
     devices:
       # If set, only device by ID will be queried.
       #- id: <rdc_device_id>
