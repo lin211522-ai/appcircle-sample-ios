@@ -12,7 +12,7 @@ sauce:
 
 xcuitest:
   app: $AC_UITESTS_RUNNER_PATH
-  testApp: $AC_TEST_IPA_PATH
+  testApp: $AC_UITESTS_RUNNER_PATH
 
 suites:
   - name: "saucy xcuitest"
