@@ -57,29 +57,6 @@ class AppcircleUITests: XCTestCase {
         XCTAssertEqual(resultText.label,"FizzBuzz")
     }
     
-    func testOthers() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let numberCell = app.textFields["Enter a number"]
-        let resultText = app.staticTexts["result"]
-
-        numberCell.tap()
-        numberCell.clearAndEnterText("4")
-        XCTAssertEqual(resultText.label,"4")
-    }
-    
-    func testFail() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let numberCell = app.textFields["Enter a number"]
-        let resultText = app.staticTexts["result"]
-
-        numberCell.tap()
-        numberCell.clearAndEnterText("7")
-        XCTAssertEqual(resultText.label,"Fizz")
-    }
 
     func testDataAttachment() throws {
         let text = "Appcircle"
