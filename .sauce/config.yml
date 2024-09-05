@@ -11,7 +11,7 @@ sauce:
     build: Release $CI_COMMIT_SHORT_SHA
 
 xcuitest:
-  app: $AC_TEST_APP_PATH
+  app: $AC_UITESTS_RUNNER_PATH
   testApp: $AC_TEST_IPA_PATH
 
 suites:
