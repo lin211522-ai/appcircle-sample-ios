@@ -21,7 +21,7 @@ struct AuthModel: Codable {
 }
 
 extension API {
-    func getAccessToken(organizationId: String, secret: String, profileId: String) async throws -> AuthModel {
+    func getAccessToken(secret: String, profileId: String) async throws -> AuthModel {
         var components = URLComponents()
         components.scheme = apiConfig.scheme
         components.host = apiConfig.host
@@ -37,7 +37,6 @@ extension API {
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         
         let parameters: [String: Any] = [
-            "OrganizationId": organizationId,
             "ProfileId": profileId,
             "Secret": secret
         ]

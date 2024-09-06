@@ -11,6 +11,5 @@ import Foundation
 public class Environments {
     static let storeURL = ""
     static let profileId = ""
-    static let organizationId = ""
     static let secret = ""
 }

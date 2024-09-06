@@ -26,9 +26,9 @@ public class UpdateChecker {
         self.api = API(apiConfig: self.authApiConfig, apiFetcher: self.authApiFetcher)
     }
     
-    func checkForUpdate(organizationId: String, secret: String, profileId: String, storeURL: String, userEmail: String) async throws -> URL? {
+    func checkForUpdate(secret: String, profileId: String, storeURL: String, userEmail: String) async throws -> URL? {
         do {
-            let authResponse = try await self.authApi.getAccessToken(organizationId: organizationId, secret: secret, profileId: profileId)
+            let authResponse = try await self.authApi.getAccessToken(secret: secret, profileId: profileId)
             let appVersions = try await self.api.getAppVersions(accessToken: authResponse.accessToken)
             let bundle = Bundle.main
             let currentVersion = bundle.infoDictionary?["CFBundleShortVersionString"] as? String
