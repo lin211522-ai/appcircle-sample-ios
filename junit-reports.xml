@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="561.983">
+    <testcase classname="Raising Vehicle Ownership Request" name="Verify that user raises a vehicle ownership request by sending all documents as documents uploaded from file explorer" time="104.512">
+        <system-out>
+            <![CDATA[* User is on Main Page......................................................passed
+* User clicks profile app bar icon on the Main Page.........................passed
+* User is on Profile Page...................................................passed
+* User clicks logout button.................................................passed
+* User is on Logout Confirmation Pop up.....................................passed
+* User clicks logout button on the Logout Confirmation Pop up...............passed
+* User is on Welcome Page...................................................passed
+* User clicks create account button on the Welcome Page.....................passed
+* User is on Create Account Page............................................passed
+* User enters first name as "Vehicle Ownership".............................passed
+* User enters last name as "Request"........................................passed
+* User enters random new e-mail.............................................passed
+* User enters new password as "Togg1234."...................................passed
+* User enters confirm password as "Togg1234."...............................passed
+* User clicks Create Account button on the Create Account Page..............passed
+* User is on Verify Account Page............................................passed
+* User enters verification code.............................................passed
+* User clicks send button on the Verify Account Page........................passed
+* User is on Main Page......................................................passed
+* User clicks My Smart Device Navigation Bar Button on the Main Page........passed
+* User is on My Smart Device Page...........................................passed
+* User clicks Add Smart Device Button on My Smart Device Page...............passed
+* User is on Add Smart Device Page..........................................passed
+* User clicks Upload Document Button........................................passed
+* User is on Upload File popup..............................................passed
+* User clicks Upload from files button......................................passed
+* User selects first document on the recents list...........................passed
+* User selects second document on the recents list..........................passed
+* User approves document selections.........................................passed
+* User is on Add Smart Device Page..........................................passed
+* User checks uploaded documents............................................passed
+* User clicks Send Documents Button.........................................passed
+* User is on Documents Sent Page............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Raising Vehicle Ownership Request" name="Verify that user raises a vehicle ownership request by sending all documents as taken photos from mobile device camera" time="114.78">
+        <system-out>
+            <![CDATA[* User is on Main Page......................................................passed
+* User clicks profile app bar icon on the Main Page.........................passed
+* User is on Profile Page...................................................passed
+* User clicks logout button.................................................passed
+* User is on Logout Confirmation Pop up.....................................passed
+* User clicks logout button on the Logout Confirmation Pop up...............passed
+* User is on Welcome Page...................................................passed
+* User clicks create account button on the Welcome Page.....................passed
+* User is on Create Account Page............................................passed
+* User enters first name as "Vehicle Ownership".............................passed
+* User enters last name as "Request"........................................passed
+* User enters random new e-mail.............................................passed
+* User enters new password as "Togg1234."...................................passed
+* User enters confirm password as "Togg1234."...............................passed
+* User clicks Create Account button on the Create Account Page..............passed
+* User is on Verify Account Page............................................passed
+* User enters verification code.............................................passed
+* User clicks send button on the Verify Account Page........................passed
+* User is on Main Page......................................................passed
+* User clicks My Smart Device Navigation Bar Button on the Main Page........passed
+* User is on My Smart Device Page...........................................passed
+* User clicks Add Smart Device Button on My Smart Device Page...............passed
+* User is on Add Smart Device Page..........................................passed
+* User clicks Upload Document Button........................................passed
+* User is on Upload File popup..............................................passed
+* User clicks Upload from files button......................................passed
+* User selects first document on the recents list...........................passed
+* User selects second document on the recents list..........................passed
+* User approves document selections.........................................passed
+* User is on Add Smart Device Page..........................................passed
+* User checks uploaded documents............................................passed
+* User clicks Send Documents Button.........................................passed
+* User is on Documents Sent Page............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Raising Vehicle Ownership Request" name="Verify that user raises a vehicle ownership request by sending all documents both by taking photo and uploading from file explorer" time="106.273">
+        <failure message="Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Akıllı Cihaz Ekle})" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[* User is on Main Page......................................................passed
+* User clicks profile app bar icon on the Main Page.........................passed
+* User is on Profile Page...................................................passed
+* User clicks logout button.................................................passed
+* User is on Logout Confirmation Pop up.....................................passed
+* User clicks logout button on the Logout Confirmation Pop up...............passed
+* User is on Welcome Page...................................................passed
+* User clicks create account button on the Welcome Page.....................passed
+* User is on Create Account Page............................................passed
+* User enters first name as "Vehicle Ownership".............................passed
+* User enters last name as "Request"........................................passed
+* User enters random new e-mail.............................................passed
+* User enters new password as "Togg1234."...................................passed
+* User enters confirm password as "Togg1234."...............................passed
+* User clicks Create Account button on the Create Account Page..............passed
+* User is on Verify Account Page............................................passed
+* User enters verification code.............................................passed
+* User clicks send button on the Verify Account Page........................passed
+* User is on Main Page......................................................passed
+* User clicks My Smart Device Navigation Bar Button on the Main Page........passed
+* User is on My Smart Device Page...........................................passed
+* User clicks Add Smart Device Button on My Smart Device Page...............failed
+* User is on Add Smart Device Page..........................................skipped
+* User clicks Upload Document Button........................................skipped
+* User is on Upload File popup..............................................skipped
+* User clicks Take a Photo Button...........................................skipped
+* User captures a photo on Camera App.......................................skipped
+* User clicks use Photo button on Camera App................................skipped
+* User is on Add Smart Device Page..........................................skipped
+* User clicks Upload Document Button........................................skipped
+* User is on Upload File popup..............................................skipped
+* User clicks Upload from files button......................................skipped
+* User selects first document on the recents list...........................skipped
+* User selects second document on the recents list..........................skipped
+* User approves document selections.........................................skipped
+* User is on Add Smart Device Page..........................................skipped
+* User checks uploaded documents............................................skipped
+* User clicks Send Documents Button.........................................skipped
+* User is on Documents Sent Page............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Akıllı Cihaz Ekle})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$F6bE80fL.getAttribute(Unknown Source)
+	at base.page.mobile.IOSMobilePage.clickWebElement(IOSMobilePage.java:86)
+	at base.page.BasePage.clickWebElement(BasePage.java:194)
+	at com.togg.toggmobile.trumore.page.smartdeviceapp.MySmartDevicePage.clickAddSmartDeviceButton(MySmartDevicePage.java:54)
+	at com.togg.toggmobile.trumore.stepdefinition.ui.smartdeviceapp.MySmartDevicePageStepDefinitions.lambda$new$2(MySmartDevicePageStepDefinitions.java:26)
+	at ✽.User clicks Add Smart Device Button on My Smart Device Page(file:///Users/samiogunersun/TestAutomationProjects/trumore-test-automation/src/test/resources/features/mobile/ui/gomore/smartdeviceapp/RaiseVehicleOwnershipRequest.feature:89)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3670b71 (tried for 0 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:261)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:77)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$F6bE80fL.getAttribute(Unknown Source)
+	at base.page.mobile.IOSMobilePage.clickWebElement(IOSMobilePage.java:86)
+	at base.page.BasePage.clickWebElement(BasePage.java:194)
+	at com.togg.toggmobile.trumore.page.smartdeviceapp.MySmartDevicePage.clickAddSmartDeviceButton(MySmartDevicePage.java:54)
+	at com.togg.toggmobile.trumore.stepdefinition.ui.smartdeviceapp.MySmartDevicePageStepDefinitions.lambda$new$2(MySmartDevicePageStepDefinitions.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java8.Invoker.invoke(Invoker.java:20)
+	at io.cucumber.java8.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:48)
+	at io.cucumber.java8.Java8StepDefinition.execute(Java8StepDefinition.java:45)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.accessibilityId: Akıllı Cihaz Ekle})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '11.0.17'
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	... 57 more
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Raising Vehicle Ownership Request" name="Verify that user raises a vehicle ownership request by sending all documents both by taking photo and uploading from file explorer 2" time="203.998">
+        <failure message="Condition failed: waiting for visibility of [Located by By.chained({AppiumBy.accessibilityId: Akıllı Cihazım &#10;Akıllı cihazınıza istediğiniz her an erişin.&#10;Akıllı Cihazınızı Trumore uygulamasına ekleyin ve erişilebilir bir dünyanın kilidini açın.}), Located by By.chained({By.xpath: (//XCUIElementTypeImage)[1]}), Located by By.chained({AppiumBy.accessibilityId: Akıllı Cihaz Ekle})] (tried for 60 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.15.0', revision: '1d14b5521b'&#10;System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '11.0.17'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">
+            <![CDATA[* User is on Main Page......................................................passed
+* User clicks profile app bar icon on the Main Page.........................passed
+* User is on Profile Page...................................................passed
+* User clicks logout button.................................................passed
+* User is on Logout Confirmation Pop up.....................................passed
+* User clicks logout button on the Logout Confirmation Pop up...............passed
+* User is on Welcome Page...................................................passed
+* User clicks create account button on the Welcome Page.....................passed
+* User is on Create Account Page............................................passed
+* User enters first name as "Vehicle Ownership".............................passed
+* User enters last name as "Request"........................................passed
+* User enters random new e-mail.............................................passed
+* User enters new password as "Togg1234."...................................passed
+* User enters confirm password as "Togg1234."...............................passed
+* User clicks Create Account button on the Create Account Page..............passed
+* User is on Verify Account Page............................................passed
+* User enters verification code.............................................passed
+* User clicks send button on the Verify Account Page........................passed
+* User is on Main Page......................................................passed
+* User clicks My Smart Device Navigation Bar Button on the Main Page........passed
+* User is on My Smart Device Page...........................................failed
+* User clicks Add Smart Device Button on My Smart Device Page...............skipped
+* User is on Add Smart Device Page..........................................skipped
+* User clicks Upload Document Button........................................skipped
+* User is on Upload File popup..............................................skipped
+* User clicks Take a Photo Button...........................................skipped
+* User captures a photo on Camera App.......................................skipped
+* User clicks use Photo button on Camera App................................skipped
+* User is on Add Smart Device Page..........................................skipped
+* User clicks Upload Document Button........................................skipped
+* User is on Upload File popup..............................................skipped
+* User clicks Upload from files button......................................skipped
+* User selects first document on the recents list...........................skipped
+* User selects second document on the recents list..........................skipped
+* User approves document selections.........................................skipped
+* User is on Add Smart Device Page..........................................skipped
+* User checks uploaded documents............................................skipped
+* User clicks Send Documents Button.........................................skipped
+* User is on Documents Sent Page............................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Condition failed: waiting for visibility of [Located by By.chained({AppiumBy.accessibilityId: Akıllı Cihazım 
+Akıllı cihazınıza istediğiniz her an erişin.
+Akıllı Cihazınızı Trumore uygulamasına ekleyin ve erişilebilir bir dünyanın kilidini açın.}), Located by By.chained({By.xpath: (//XCUIElementTypeImage)[1]}), Located by By.chained({AppiumBy.accessibilityId: Akıllı Cihaz Ekle})] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '11.0.17'
+Driver info: driver.version: unknown
+	at base.page.Page.waitElementsToBeVisibleThrowsException(Page.java:154)
+	at base.page.BasePage.waitElementsToBeVisibleThrowsException(BasePage.java:246)
+	at com.togg.toggmobile.trumore.page.smartdeviceapp.MySmartDevicePage.checkMySmartDevicePage(MySmartDevicePage.java:45)
+	at com.togg.toggmobile.trumore.stepdefinition.ui.smartdeviceapp.MySmartDevicePageStepDefinitions.lambda$new$1(MySmartDevicePageStepDefinitions.java:21)
+	at ✽.User is on My Smart Device Page(file:///Users/samiogunersun/TestAutomationProjects/trumore-test-automation/src/test/resources/features/mobile/ui/gomore/smartdeviceapp/RaiseVehicleOwnershipRequest.feature:88)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
