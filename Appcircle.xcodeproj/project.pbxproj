@@ -10,6 +10,9 @@
 		450FAD92277C4D4D00C3060D /* FizzBuzzKit in Frameworks */ = {isa = PBXBuildFile; productRef = 450FAD91277C4D4D00C3060D /* FizzBuzzKit */; };
 		965115AB2BB706D40094E519 /* Pods_Appcircle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965115AA2BB706D40094E519 /* Pods_Appcircle.framework */; };
 		965115AC2BB706D40094E519 /* Pods_Appcircle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 965115AA2BB706D40094E519 /* Pods_Appcircle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		96B72BA52CE5CEF500F0E723 /* AppcircleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B72BA22CE5CEF500F0E723 /* AppcircleUITests.swift */; };
+		96B72BA62CE5CEF500F0E723 /* AppcircleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B72BA32CE5CEF500F0E723 /* AppcircleUITestsLaunchTests.swift */; };
+		96B72BA92CE5CEF500F0E723 /* AppcircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B72BA72CE5CEF500F0E723 /* AppcircleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		518CE9777E6CE0571A6DC6D9 /* Pods-Appcircle-AppcircleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appcircle-AppcircleUITests.release.xcconfig"; path = "Target Support Files/Pods-Appcircle-AppcircleUITests/Pods-Appcircle-AppcircleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8822187C3BBED735C1EBDCFE /* Pods-Appcircle-AppcircleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appcircle-AppcircleUITests.debug.xcconfig"; path = "Target Support Files/Pods-Appcircle-AppcircleUITests/Pods-Appcircle-AppcircleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		965115AA2BB706D40094E519 /* Pods_Appcircle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Appcircle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B72BA22CE5CEF500F0E723 /* AppcircleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppcircleUITests.swift; sourceTree = "<group>"; };
+		96B72BA32CE5CEF500F0E723 /* AppcircleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppcircleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96B72BA72CE5CEF500F0E723 /* AppcircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppcircleTests.swift; sourceTree = "<group>"; };
 		9CA672B203BF1AB373CC906E /* Pods_AppcircleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppcircleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41578F903125A0CD7D4C6D1 /* Pods-Appcircle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appcircle.release.xcconfig"; path = "Target Support Files/Pods-Appcircle/Pods-Appcircle.release.xcconfig"; sourceTree = "<group>"; };
 		E575E4F72A6E7F435A20C2F5 /* Pods-Appcircle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appcircle.debug.xcconfig"; path = "Target Support Files/Pods-Appcircle/Pods-Appcircle.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,9 +77,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		96B72B7E2CE5CE3800F0E723 /* AppcircleUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AppcircleUITests; sourceTree = "<group>"; };
 		96B72B872CE5CE3800F0E723 /* Appcircle */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (96B72B902CE5CE3800F0E723 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Appcircle; sourceTree = "<group>"; };
-		96B72B8E2CE5CE3800F0E723 /* AppcircleTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AppcircleTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +112,8 @@
 			children = (
 				450FAD8F277C4C4600C3060D /* FizzBuzzKit */,
 				96B72B872CE5CE3800F0E723 /* Appcircle */,
-				96B72B8E2CE5CE3800F0E723 /* AppcircleTests */,
-				96B72B7E2CE5CE3800F0E723 /* AppcircleUITests */,
+				96B72BA82CE5CEF500F0E723 /* AppcircleTests */,
+				96B72BA42CE5CEF500F0E723 /* AppcircleUITests */,
 				450FAD63277C4BBC00C3060D /* Products */,
 				450FAD90277C4D4D00C3060D /* Frameworks */,
 				B1F44333DE4BA7CE83A6EEB4 /* Pods */,
@@ -135,6 +139,23 @@
 				9CA672B203BF1AB373CC906E /* Pods_AppcircleTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96B72BA42CE5CEF500F0E723 /* AppcircleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96B72BA22CE5CEF500F0E723 /* AppcircleUITests.swift */,
+				96B72BA32CE5CEF500F0E723 /* AppcircleUITestsLaunchTests.swift */,
+			);
+			path = AppcircleUITests;
+			sourceTree = "<group>";
+		};
+		96B72BA82CE5CEF500F0E723 /* AppcircleTests */ = {
+			isa = PBXGroup;
+			children = (
+				96B72BA72CE5CEF500F0E723 /* AppcircleTests.swift */,
+			);
+			path = AppcircleTests;
 			sourceTree = "<group>";
 		};
 		B1F44333DE4BA7CE83A6EEB4 /* Pods */ = {
@@ -192,9 +213,6 @@
 			dependencies = (
 				450FAD74277C4BBF00C3060D /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				96B72B8E2CE5CE3800F0E723 /* AppcircleTests */,
-			);
 			name = AppcircleTests;
 			productName = AppcircleTests;
 			productReference = 450FAD72277C4BBF00C3060D /* AppcircleTests.xctest */;
@@ -213,9 +231,6 @@
 			);
 			dependencies = (
 				450FAD7E277C4BBF00C3060D /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				96B72B7E2CE5CE3800F0E723 /* AppcircleUITests */,
 			);
 			name = AppcircleUITests;
 			productName = AppcircleUITests;
@@ -370,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B72BA92CE5CEF500F0E723 /* AppcircleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +393,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B72BA52CE5CEF500F0E723 /* AppcircleUITests.swift in Sources */,
+				96B72BA62CE5CEF500F0E723 /* AppcircleUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
