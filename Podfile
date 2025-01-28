@@ -7,6 +7,10 @@ target 'Appcircle' do
 
   # Pods for Appcircle
   	    pod 'SDWebImage'
+        pod 'lottie-ios'
+        pod 'DGCharts'
+        pod 'Kingfisher', '~> 8.0'
+        pod 'SnapKit', '~> 5.7.0'
 
 
 
