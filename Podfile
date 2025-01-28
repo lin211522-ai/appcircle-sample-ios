@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '15.0'
-source 'http://nexus.appcircle.io/repository/appcircle-nexus-cocoapods-ios/'
+source 'https://nexus.appcircle.io/repository/appcircle-nexus-cocoapods-ios/'
 
 target 'Appcircle' do
   # Comment the next line if you don't want to use dynamic frameworks
