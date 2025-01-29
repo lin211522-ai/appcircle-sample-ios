@@ -10,6 +10,7 @@ target 'Appcircle' do
   	    pod 'SDWebImage'
         pod 'lottie-ios'
         pod 'DGCharts'
+        pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
         pod 'Kingfisher', '~> 8.0'
         pod 'SnapKit', '~> 5.7.0'
 

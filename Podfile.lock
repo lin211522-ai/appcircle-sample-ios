@@ -1,3 +1,36 @@
-PODFILE CHECKSUM: 159f1aa7e3a94929022582329e05a70dcd79ba13
+PODS:
+  - DGCharts (5.1.0):
+    - DGCharts/Core (= 5.1.0)
+  - DGCharts/Core (5.1.0)
+  - Kingfisher (8.1.3)
+  - lottie-ios (4.5.1)
+  - SDWebImage (5.20.0):
+    - SDWebImage/Core (= 5.20.0)
+  - SDWebImage/Core (5.20.0)
+  - SnapKit (5.7.1)
 
-COCOAPODS: 1.13.0
+DEPENDENCIES:
+  - DGCharts
+  - Kingfisher (~> 8.0)
+  - lottie-ios
+  - SDWebImage
+  - SnapKit (~> 5.7.0)
+
+SPEC REPOS:
+  https://nexus.appcircle.io/repository/appcircle-nexus-cocoapods-ios/:
+    - DGCharts
+    - Kingfisher
+    - lottie-ios
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  DGCharts: fa70a30f1d7bd62be0f8ed4a887d17969fa77f58
+  Kingfisher: 115c79e04abad9e60635ce4e8a658bed507b3de8
+  lottie-ios: 32d7d3c5942ffe4fc2cddd387d0da25f24ee30cc
+  SDWebImage: fb60e51f36f744399386dc45f6971ad2eedf1384
+  SnapKit: 430ac122f37c70e889c989f220e3d9fe84cfa834
+
+PODFILE CHECKSUM: 5d6c81b8fac58088a7d6d4709a2b449aacb50900
+
+COCOAPODS: 1.16.2

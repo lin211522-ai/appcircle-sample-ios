@@ -15,8 +15,10 @@
 		450FAD81277C4BBF00C3060D /* AppcircleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FAD80277C4BBF00C3060D /* AppcircleUITests.swift */; };
 		450FAD83277C4BBF00C3060D /* AppcircleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450FAD82277C4BBF00C3060D /* AppcircleUITestsLaunchTests.swift */; };
 		450FAD92277C4D4D00C3060D /* FizzBuzzKit in Frameworks */ = {isa = PBXBuildFile; productRef = 450FAD91277C4D4D00C3060D /* FizzBuzzKit */; };
+		95A2FD63F67BA356EF4B6BB5 /* Pods_AppcircleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA672B203BF1AB373CC906E /* Pods_AppcircleTests.framework */; };
 		965115AB2BB706D40094E519 /* Pods_Appcircle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965115AA2BB706D40094E519 /* Pods_Appcircle.framework */; };
 		965115AC2BB706D40094E519 /* Pods_Appcircle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 965115AA2BB706D40094E519 /* Pods_Appcircle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFE26032F1AD04390AD956EE /* Pods_Appcircle_AppcircleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1347EF61C755B4D254896A48 /* Pods_Appcircle_AppcircleUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A2FD63F67BA356EF4B6BB5 /* Pods_AppcircleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE26032F1AD04390AD956EE /* Pods_Appcircle_AppcircleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +202,7 @@
 				450FAD5F277C4BBC00C3060D /* Frameworks */,
 				450FAD60277C4BBC00C3060D /* Resources */,
 				965115AD2BB706D50094E519 /* Embed Frameworks */,
+				FCB5BFB43C68638B09B8393C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +243,7 @@
 				450FAD78277C4BBF00C3060D /* Sources */,
 				450FAD79277C4BBF00C3060D /* Frameworks */,
 				450FAD7A277C4BBF00C3060D /* Resources */,
+				7EA3DB4673113BEC8B6B43CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,6 +389,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA3DB4673113BEC8B6B43CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appcircle-AppcircleUITests/Pods-Appcircle-AppcircleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appcircle-AppcircleUITests/Pods-Appcircle-AppcircleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Appcircle-AppcircleUITests/Pods-Appcircle-AppcircleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCB5BFB43C68638B09B8393C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appcircle/Pods-Appcircle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appcircle/Pods-Appcircle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Appcircle/Pods-Appcircle-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
