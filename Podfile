@@ -6,7 +6,7 @@ target 'Appcircle' do
   use_frameworks!
 
   # Pods for Appcircle
-  	    pod 'SDWebImage'
+
 
 
 
