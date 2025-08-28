@@ -259,6 +259,11 @@
 				Base,
 			);
 			mainGroup = 450FAD59277C4BBC00C3060D;
+			packageReferences = (
+				6740E0592E60398B00A7475E /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				6740E05A2E6039A000A7475E /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				6740E05B2E6039B700A7475E /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
 			productRefGroup = 450FAD63277C4BBC00C3060D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -717,6 +722,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6740E0592E60398B00A7475E /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.1;
+			};
+		};
+		6740E05A2E6039A000A7475E /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		6740E05B2E6039B700A7475E /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.31.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		450FAD91277C4D4D00C3060D /* FizzBuzzKit */ = {
