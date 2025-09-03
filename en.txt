@@ -1,1 +1,5 @@
-This script has been prepared for metadata testing. It contains sample metadata in English for the new section information.
+Dear Customer
+ 
+We continue to develop CEPTETEB Mobile in line with your requests and suggestions.
+ 
+Thanks to the performance improvements, you can enjoy a more enjoyable CEPTETEB Mobile experience.
