@@ -1,4 +1,4 @@
-# Uncomment the next line to define a global platform for your project
+# Uncomment the next line to define a global platform for your project trigger testss
 platform :ios, '15.0'
 
 target 'Appcircle' do
