@@ -281,6 +281,17 @@
 				Base,
 			);
 			mainGroup = 450FAD59277C4BBC00C3060D;
+			packageReferences = (
+				6779099D2EFACEFE004ACC28 /* XCRemoteSwiftPackageReference "AnyLanguageModel" */,
+				6779099E2EFACF20004ACC28 /* XCRemoteSwiftPackageReference "capacitor-swift-pm" */,
+				6779099F2EFAD066004ACC28 /* XCRemoteSwiftPackageReference "ms-intune-app-sdk-ios" */,
+				677909A02EFAD0AF004ACC28 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				677909A12EFAD441004ACC28 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				677909A22EFAD483004ACC28 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */,
+				677909A32EFAD4C8004ACC28 /* XCRemoteSwiftPackageReference "Prefire" */,
+				677909A42EFAD4E9004ACC28 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				677909A52EFAD4FD004ACC28 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			productRefGroup = 450FAD63277C4BBC00C3060D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -745,6 +756,81 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6779099D2EFACEFE004ACC28 /* XCRemoteSwiftPackageReference "AnyLanguageModel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattt/AnyLanguageModel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+		6779099E2EFACF20004ACC28 /* XCRemoteSwiftPackageReference "capacitor-swift-pm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ionic-team/capacitor-swift-pm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		6779099F2EFAD066004ACC28 /* XCRemoteSwiftPackageReference "ms-intune-app-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoftconnect/ms-intune-app-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 21.2.0;
+			};
+		};
+		677909A02EFAD0AF004ACC28 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		677909A12EFAD441004ACC28 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		677909A22EFAD483004ACC28 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AzureAD/microsoft-authentication-library-for-objc";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		677909A32EFAD4C8004ACC28 /* XCRemoteSwiftPackageReference "Prefire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BarredEwe/Prefire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+		677909A42EFAD4E9004ACC28 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
+			};
+		};
+		677909A52EFAD4FD004ACC28 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 26.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		450FAD91277C4D4D00C3060D /* FizzBuzzKit */ = {
