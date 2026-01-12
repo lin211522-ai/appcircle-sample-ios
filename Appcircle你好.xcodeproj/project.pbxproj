@@ -54,14 +54,14 @@
 		06FBBF9106392823B42C71F8 /* Pods-AppcircleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppcircleTests.debug.xcconfig"; path = "Target Support Files/Pods-AppcircleTests/Pods-AppcircleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1347EF61C755B4D254896A48 /* Pods_Appcircle_AppcircleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appcircle_AppcircleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17DFB419DA93C43B5D1830B8 /* Pods-AppcircleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppcircleTests.release.xcconfig"; path = "Target Support Files/Pods-AppcircleTests/Pods-AppcircleTests.release.xcconfig"; sourceTree = "<group>"; };
-		450FAD62277C4BBC00C3060D /* Appcircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appcircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		450FAD62277C4BBC00C3060D /* Appcircle你好你好.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appcircle你好你好.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450FAD65277C4BBC00C3060D /* AppcircleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppcircleApp.swift; sourceTree = "<group>"; };
 		450FAD67277C4BBC00C3060D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		450FAD69277C4BBF00C3060D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450FAD6C277C4BBF00C3060D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		450FAD72277C4BBF00C3060D /* AppcircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppcircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		450FAD72277C4BBF00C3060D /* Appcircle你好Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Appcircle你好Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450FAD76277C4BBF00C3060D /* AppcircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppcircleTests.swift; sourceTree = "<group>"; };
-		450FAD7C277C4BBF00C3060D /* AppcircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppcircleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		450FAD7C277C4BBF00C3060D /* Appcircle你好UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Appcircle你好UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450FAD80277C4BBF00C3060D /* AppcircleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppcircleUITests.swift; sourceTree = "<group>"; };
 		450FAD82277C4BBF00C3060D /* AppcircleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppcircleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		450FAD8F277C4C4600C3060D /* FizzBuzzKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FizzBuzzKit; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 		450FAD63277C4BBC00C3060D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				450FAD62277C4BBC00C3060D /* Appcircle.app */,
-				450FAD72277C4BBF00C3060D /* AppcircleTests.xctest */,
-				450FAD7C277C4BBF00C3060D /* AppcircleUITests.xctest */,
+				450FAD62277C4BBC00C3060D /* Appcircle你好你好.app */,
+				450FAD72277C4BBF00C3060D /* Appcircle你好Tests.xctest */,
+				450FAD7C277C4BBF00C3060D /* Appcircle你好UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		450FAD61277C4BBC00C3060D /* Appcircle */ = {
+		450FAD61277C4BBC00C3060D /* Appcircle你好你好 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 450FAD86277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "Appcircle" */;
+			buildConfigurationList = 450FAD86277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "Appcircle你好你好" */;
 			buildPhases = (
 				25389DD81A4BB723DEDD9515 /* [CP] Check Pods Manifest.lock */,
 				450FAD5E277C4BBC00C3060D /* Sources */,
@@ -203,17 +203,17 @@
 			);
 			dependencies = (
 			);
-			name = Appcircle;
+			name = "Appcircle你好你好";
 			packageProductDependencies = (
 				450FAD91277C4D4D00C3060D /* FizzBuzzKit */,
 			);
 			productName = Appcircle;
-			productReference = 450FAD62277C4BBC00C3060D /* Appcircle.app */;
+			productReference = 450FAD62277C4BBC00C3060D /* Appcircle你好你好.app */;
 			productType = "com.apple.product-type.application";
 		};
-		450FAD71277C4BBF00C3060D /* AppcircleTests */ = {
+		450FAD71277C4BBF00C3060D /* Appcircle你好Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 450FAD89277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "AppcircleTests" */;
+			buildConfigurationList = 450FAD89277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "Appcircle你好Tests" */;
 			buildPhases = (
 				3C9C75B2B7A883E31F7EA73E /* [CP] Check Pods Manifest.lock */,
 				450FAD6E277C4BBF00C3060D /* Sources */,
@@ -225,14 +225,14 @@
 			dependencies = (
 				450FAD74277C4BBF00C3060D /* PBXTargetDependency */,
 			);
-			name = AppcircleTests;
+			name = "Appcircle你好Tests";
 			productName = AppcircleTests;
-			productReference = 450FAD72277C4BBF00C3060D /* AppcircleTests.xctest */;
+			productReference = 450FAD72277C4BBF00C3060D /* Appcircle你好Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		450FAD7B277C4BBF00C3060D /* AppcircleUITests */ = {
+		450FAD7B277C4BBF00C3060D /* Appcircle你好UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 450FAD8C277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "AppcircleUITests" */;
+			buildConfigurationList = 450FAD8C277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "Appcircle你好UITests" */;
 			buildPhases = (
 				1B4205A59C61E03FB5145E0A /* [CP] Check Pods Manifest.lock */,
 				450FAD78277C4BBF00C3060D /* Sources */,
@@ -244,9 +244,9 @@
 			dependencies = (
 				450FAD7E277C4BBF00C3060D /* PBXTargetDependency */,
 			);
-			name = AppcircleUITests;
+			name = "Appcircle你好UITests";
 			productName = AppcircleUITests;
-			productReference = 450FAD7C277C4BBF00C3060D /* AppcircleUITests.xctest */;
+			productReference = 450FAD7C277C4BBF00C3060D /* Appcircle你好UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -272,7 +272,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 450FAD5D277C4BBC00C3060D /* Build configuration list for PBXProject "Appcircle" */;
+			buildConfigurationList = 450FAD5D277C4BBC00C3060D /* Build configuration list for PBXProject "Appcircle你好" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -285,9 +285,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				450FAD61277C4BBC00C3060D /* Appcircle */,
-				450FAD71277C4BBF00C3060D /* AppcircleTests */,
-				450FAD7B277C4BBF00C3060D /* AppcircleUITests */,
+				450FAD61277C4BBC00C3060D /* Appcircle你好你好 */,
+				450FAD71277C4BBF00C3060D /* Appcircle你好Tests */,
+				450FAD7B277C4BBF00C3060D /* Appcircle你好UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -419,12 +419,12 @@
 /* Begin PBXTargetDependency section */
 		450FAD74277C4BBF00C3060D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 450FAD61277C4BBC00C3060D /* Appcircle */;
+			target = 450FAD61277C4BBC00C3060D /* Appcircle你好你好 */;
 			targetProxy = 450FAD73277C4BBF00C3060D /* PBXContainerItemProxy */;
 		};
 		450FAD7E277C4BBF00C3060D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 450FAD61277C4BBC00C3060D /* Appcircle */;
+			target = 450FAD61277C4BBC00C3060D /* Appcircle你好你好 */;
 			targetProxy = 450FAD7D277C4BBF00C3060D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -561,7 +561,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Appcircle/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Appcircle;
+				INFOPLIST_KEY_CFBundleDisplayName = "Appcircle你好";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -600,7 +600,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Appcircle/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Appcircle;
+				INFOPLIST_KEY_CFBundleDisplayName = "Appcircle你好";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -643,7 +643,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appcircle.app/Appcircle";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appcircle你好.app/Appcircle你好";
 			};
 			name = Debug;
 		};
@@ -665,7 +665,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appcircle.app/Appcircle";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Appcircle你好.app/Appcircle你好";
 			};
 			name = Release;
 		};
@@ -710,7 +710,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		450FAD5D277C4BBC00C3060D /* Build configuration list for PBXProject "Appcircle" */ = {
+		450FAD5D277C4BBC00C3060D /* Build configuration list for PBXProject "Appcircle你好" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				450FAD84277C4BBF00C3060D /* Debug */,
@@ -719,7 +719,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		450FAD86277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "Appcircle" */ = {
+		450FAD86277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "Appcircle你好你好" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				450FAD87277C4BBF00C3060D /* Debug */,
@@ -728,7 +728,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		450FAD89277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "AppcircleTests" */ = {
+		450FAD89277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "Appcircle你好Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				450FAD8A277C4BBF00C3060D /* Debug */,
@@ -737,7 +737,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		450FAD8C277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "AppcircleUITests" */ = {
+		450FAD8C277C4BBF00C3060D /* Build configuration list for PBXNativeTarget "Appcircle你好UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				450FAD8D277C4BBF00C3060D /* Debug */,
