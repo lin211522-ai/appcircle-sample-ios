@@ -1,4 +1,6 @@
 source "https://rubygems.org"
 
-gem "danger"
+ruby ">=2.7.0"
+
+gem "danger", "9.5.3"
 gem "danger-swiftlint"
