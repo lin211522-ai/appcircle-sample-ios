@@ -1,106 +1,13 @@
-puts "🔥🔥🔥 DANGERFILE LOADED"
-STDERR.puts "🔥🔥🔥 STDERR: DANGERFILE STARTED"
-# MR title format check
-if !gitlab.mr_title.match(/^(Draft:\s*)?\[MOB-[0-9]+\]\s-\s.+/)
-  warn("Invalid MR title format")
+# Sometimes it's a README fix, or something like that - which isn't relevant for
+# including in a project's CHANGELOG for example
+declared_trivial = github.pr_title.include? "#trivial"
 
-  markdown <<-MARKDOWN
-### ❌ Invalid Merge Request Title
+# Make it more obvious that a PR is a work in progress and shouldn't be merged yet
+warn("PR is classed as Work in Progress") if github.pr_title.include? "[WIP]"
 
-Merge Request title must follow the required format.
+# Warn when there is a big PR
+warn("Big PR") if git.lines_of_code > 500
 
-#### ✅ Valid Examplesasdasd
-- [MOB-123] - Add login validation
-- Draft: [MOB-456] - Fix payment crash
-
-#### ❌ Invalid Examples
-- MOB-123 Add login
-- [MOB123] - Add login
-- [Feature] - Add login
-- Fix login issue
-MARKDOWN
-end
-
-# Large MR warning (file count based)
-if gitlab.mr_changes && gitlab.mr_changes.count > 50
-  warn("Large Merge Request")
-
-  markdown <<-MARKDOWN
-### ⚠️ Large Merge Request Detected
-
-This Merge Request contains **more than 50 file changes**.
-
-Please consider:
-- Splitting the MR into smaller parts
-- Making the review process easier
-- Reducing the risk of regressions
-MARKDOWN
-end
-
-# Draft MR info
-if gitlab.mr_title.start_with?("Draft:")
-  markdown <<-MARKDOWN
-### ℹ️ Draft Merge Request
-
-This Merge Request is marked as **Draft**.
-Please convert it to ready state before requesting final review.
-MARKDOWN
-end
-
-# Critical target branch warning
-if gitlab.mr_target_branch =~ /^(main|release\/|hotfix\/)/
-  warn("Critical branch target")
-
-  markdown <<-MARKDOWN
-### ⚠️ Critical Branch Target
-
-This Merge Request targets a **production-related branch**.
-
-Please double-check:
-- Impact on production
-- Backward compatibility
-- Rollback strategy
-MARKDOWN
-end
-
-# Missing MR description
-if gitlab.mr_description.to_s.strip.empty?
-  warn("Missing MR description")
-
-  markdown <<-MARKDOWN
-### 📝 Missing Description
-
-Please add a brief description explaining:
-- What was changed
-- Why it was needed
-MARKDOWN
-end
-
-# Small MR positive feedback
-if gitlab.mr_changes && gitlab.mr_changes.count <= 5
-  markdown <<-MARKDOWN
-### ✅ Nice and Small MR
-
-This is a small and focused Merge Request.
-Great job keeping changes minimal 👍
-MARKDOWN
-end
-
-# --------------------------------------------------
-# SwiftLint inline PR comments (NEW)
-# --------------------------------------------------
-
-require 'danger-swiftlint'
-
-if File.exist?("swiftlint.json")
-  swiftlint.report_file = "swiftlint.json"
-  swiftlint.lint_files(
-    inline_mode: true,
-    quiet: true
-  )
-else
-  fail("SwiftLint report file not found (swiftlint.json)")
-end
-
-warn "🚨 TEST: Danger MR context working"
-puts "✅✅✅ DANGERFILE FINISHED"
+# Don't let testing shortcuts get into master by accident
+fail("fdescribe left in tests") if `grep -r fdescribe specs/ `.length > 1
+fail("fit left in tests") if `grep -r fit specs/ `.length > 1
