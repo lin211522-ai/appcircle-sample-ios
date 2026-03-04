@@ -7,6 +7,7 @@ target 'Appcircle' do
 
   # Pods for Appcircle
   	    pod 'SDWebImage'
+  	    pod 'Firebase/Crashlytics'
 
 
 
